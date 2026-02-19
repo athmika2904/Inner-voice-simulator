@@ -4,10 +4,10 @@ function History({history}){
             {history.map((item,index)=>(
                 <div key={index} className="msg-group">
                     <div className="message-row user-row">
-                    <div className="bubble user">You:{item.user}</div>
+                    <div className="bubble user">{item.user}</div>
                     </div>
                     <div className="message-row voice-row">
-                        <div className="bubble voice">Voice:{item.reply}</div>
+                        <div className="bubble voice">{item.reply}</div>
                     </div>
                 </div>
             ))}

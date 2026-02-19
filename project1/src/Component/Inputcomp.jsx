@@ -1,5 +1,4 @@
 import {useState} from "react";
-import "./inputcomp.css"
 function Inputcomp({onSend}){
     const [text,setText]=useState("");
     const handleClick=()=>{
