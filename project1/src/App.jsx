@@ -22,12 +22,13 @@ function App() {
     setHistory([...history,newItem]);
   };
   return (
-    <div>
+    <div className='app-wrapper'>
+      <div className='app-container'>
       <h1>Inner Voice Simulator</h1>
       <Voicesetter voice={voice} setVoice={setVoice}/>
       <Inputcomp onSend={handleSend}/>
-      <h2>{reply}</h2>
       <History history={history}/>
+      </div>
     </div>
   );
 }

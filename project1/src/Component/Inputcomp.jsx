@@ -1,11 +1,12 @@
 import {useState} from "react";
+import "./inputcomp.css"
 function Inputcomp({onSend}){
     const [text,setText]=useState("");
     const handleClick=()=>{
         onSend(text);
         setText("");
     }
-    return(<div>
+    return(<div className="input-selection">
         <input value={text} onChange={(e)=>setText(e.target.value)} placeholder="Type your thought..."/>
         <button onClick={handleClick}>Send</button>
     </div>)
